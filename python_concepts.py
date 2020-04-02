@@ -181,3 +181,30 @@ print(squares)
 
 cubes = [digit**3 for digit in single_digits]
 print(cubes)
+
+# DICTIONARY --------------------------------------------------------------------------------------------------
+# So the keys must always be unchangeable, hashable data types, like numbers or strings.
+sensors =  {"living room": 21, "kitchen": 23, "bedroom": 20, "pantry": 22}
+num_cameras = {"backyard": 6,  "garage": 2, "driveway": 1}
+empty_dict = {}
+
+# Add key values
+animals_in_zoo = {}
+animals_in_zoo["zebras"] = 8
+animals_in_zoo["monkeys"] = 12
+animals_in_zoo["dinosaurs"] = 0
+print(animals_in_zoo)
+
+# Add multiple key values
+user_ids = {"teraCoder": 9018293, "proProgrammer": 119238}
+user_ids.update({"theLooper": 138475, "stringQueen": 85739})
+
+# Update
+oscar_winners = {"Best Picture": "La La Land", "Best Actor": "Casey Affleck", "Best Actress": "Emma Stone", "Animated Feature": "Zootopia"}
+oscar_winners["Best Picture"] = "Moonlight"
+
+# Zipped Dictionary
+drinks = ["espresso", "chai", "decaf", "drip"]
+caffeine = [64, 40, 0, 120]
+zipped_drinks = zip(drinks, caffeine)
+drinks_to_caffeine = {key:value for key, value in zipped_drinks}
